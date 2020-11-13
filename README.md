@@ -7,3 +7,5 @@ Contributors:
 - Jianna Orias, CENG
 - Leighton Villanueva, ICS
 - Jiayu Xu, ICS
+
+World Happiness Report Data Set: https://www.kaggle.com/unsdsn/world-happiness?select=2015.csv
