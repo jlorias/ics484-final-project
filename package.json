@@ -2,7 +2,7 @@
   "name": "ics484-final-project",
   "version": "1.0.0",
   "description": "Data Visualization of 2015-2019 World Happiness Reports",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
