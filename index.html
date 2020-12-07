@@ -3,23 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>World Happiness Reports 2015-2019</title>
-
+  <!-- Plotly.js -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-  <!--  Leaflet CSS-->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-        crossorigin=""/>
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-          integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-          crossorigin=""></script>
-
-  <!-- Plotly.js -->
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body>
+  <!--  menu -->
   <div class="fixed-top bg-light">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#">World Happiness Reports 2015-2019</a>
@@ -41,11 +32,24 @@
       </div>
     </nav>
   </div>
-  <div class="world-map">
-    <script src="src/components/WorldMap.js"></script>
-  </div>
 
-  </div>
+  <!--  map goes here -->
+  <div class="myDiv"></div>
+
+  <script>
+    var graphDiv = document.getElementById("myDiv");
+    var data = [{
+      type: "choroplethmapbox", locations: ["NY", "MA", "VT"], z: [-50, -10, -20],
+      geojson: "https://raw.githubusercontent.com/python-visualization/folium/master/examples/data/us-states.json"
+    }];
+
+    var layout = {mapbox: {center: {lon: -74, lat: 43}, zoom: 3.5},
+      width: 600, height:400};
+
+    var config = {mapboxAccessToken: "pk.eyJ1IjoiaWRlbWVsbG8iLCJhIjoiY2ptNnFiZmc5MDJoZzNwdXE2aXhiYXNqdCJ9.qKCVHMu9enwE6uzCJRDgFw"};
+
+    Plotly.newPlot(graphDiv, data, layout, config);
+  </script>
 
   <!-- Bootstrap CDNs-->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

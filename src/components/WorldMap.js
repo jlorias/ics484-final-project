@@ -4,7 +4,7 @@ Plotly.d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/2014_wor
   }
 
   var data = [{
-    type: 'choropleth',
+    type: 'Choroplethmapbox',
     locations: unpack(rows, 'CODE'),
     z: unpack(rows, 'GDP (BILLIONS)'),
     text: unpack(rows, 'COUNTRY'),
@@ -31,16 +31,89 @@ Plotly.d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/2014_wor
   }];
 
   var layout = {
+    dragmode: "zoom",
     height: 2000,
     width: 2500,
-    geo:{
-      showframe: false,
-      showcoastlines: false,
-      projection:{
-        type: 'mercator'
-      }
+    title: 'Countries by Average HDI Rank',
+    mapbox: {
+      style: 'light',
+      center: {
+        lat: 0,
+        lon: 0
+      },
+      domain: {
+        x: [0,1],
+        y: [0, 1]
+      },
+      zoom: 5
     },
-
+    margin: {
+      r: 0,
+      t: 0,
+      b: 0,
+      l: 0,
+      pad: 0
+    }
   };
   Plotly.newPlot("world-map", data, layout, {showLink: false});
 });
+
+// Plotly.d3.csv('https://raw.githubusercontent.com/plotly/datasets/master/2014_world_gdp_with_codes.csv', function(err, rows){
+//   function unpack(rows, key) {
+//     return rows.map(function(row) { return row[key]; });
+//   }
+//
+//   var data = [{
+//     type: 'Choroplethmapbox',
+//     locations: unpack(rows, 'CODE'),
+//     z: unpack(rows, 'GDP (BILLIONS)'),
+//     text: unpack(rows, 'COUNTRY'),
+//     colorscale: [
+//       [0,'rgb(5, 10, 172)'],[0.35,'rgb(40, 60, 190)'],
+//       [0.5,'rgb(70, 100, 245)'], [0.6,'rgb(90, 120, 245)'],
+//       [0.7,'rgb(106, 137, 247)'],[1,'rgb(220, 220, 220)']],
+//     autocolorscale: false,
+//     reversescale: true,
+//     marker: {
+//       line: {
+//         color: 'rgb(180,180,180)',
+//         width: 0.5
+//       }
+//     },
+//     tick0: 0,
+//     zmin: 0,
+//     dtick: 1000,
+//     colorbar: {
+//       autotic: false,
+//       tickprefix: '$',
+//       title: 'GDP<br>Billions US$'
+//     }
+//   }];
+//
+//   var layout = {
+//     dragmode: "zoom",
+//     height: 2000,
+//     width: 2500,
+//     title: 'Countries by Average HDI Rank',
+//     mapbox: {
+//       style: 'light',
+//       center: {
+//         lat: 0,
+//         lon: 0
+//       },
+//       domain: {
+//         x: [0,1],
+//         y: [0, 1]
+//       },
+//       zoom: 5
+//     },
+//     margin: {
+//       r: 0,
+//       t: 0,
+//       b: 0,
+//       l: 0,
+//       pad: 0
+//     }
+//   };
+//   Plotly.newPlot("map", data, layout);
+// });
