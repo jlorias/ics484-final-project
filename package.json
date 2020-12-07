@@ -19,6 +19,7 @@
   "dependencies": {
     "@popperjs/core": "^2.5.4",
     "bootstrap": "^4.5.3",
+    "bootstrap-drawer": "^1.0.6",
     "jquery": "^3.5.1",
     "plotly.js-dist": "^1.57.1"
   }
