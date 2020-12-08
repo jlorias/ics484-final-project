@@ -2,25 +2,25 @@
 data = [
   {
   type: 'scatterpolar',
-  r: [39, 28, 8, 7, 28, 39],
-  theta: ['A','B','C', 'D', 'E', 'A'],
+  r: [7.6245, 1.350625,	1.491625,	0.915875,	0.606625,	0.1935,	0.3965],
+  theta: ['Happiness','GDP','Social Support', 'Life Expectancy', 'Freedom', 'Generosity','Perception of Corruption'],
   fill: 'toself',
-  name: 'Group A'
+  name: 'Norway'
   },
   {
   type: 'scatterpolar',
-  r: [1.5, 10, 39, 31, 15, 1.5],
-  theta: ['A','B','C', 'D', 'E', 'A'],
+  r: [1.350625,	1.491625,	0.915875,	0.606625,	0.1935,	0.3965],
+  theta: ['Happiness','GDP','Social Support', 'Life Expectancy', 'Freedom', 'Generosity','Perception of Corruption'],
   fill: 'toself',
-  name: 'Group B'
+  name: 'Finland'
   }
 ]
 
 layout = {
   polar: {
     radialaxis: {
-      visible: true,
-      range: [0, 50]
+      visible: false,
+      range: [0, 10]
     }
   }
 }
