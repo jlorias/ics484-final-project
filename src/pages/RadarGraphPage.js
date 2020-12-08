@@ -8,6 +8,13 @@ data = [
   },
   {
   type: 'scatterpolar',
+  r: [7.56625,	1.3915,	1.49475,	0.914375,	0.6080625,	0.29375,	0.42225],
+  theta: ['Happiness','GDP','Social Support', 'Life Expectancy', 'Freedom', 'Generosity','Perception of Corruption'],
+  fill: 'toself',
+  name: 'Denmark'
+  },
+  {
+  type: 'scatterpolar',
   r: [1.5, 10, 39, 31, 15, 1.5],
   theta: ['A','B','C', 'D', 'E', 'A'],
   fill: 'toself',
@@ -18,8 +25,8 @@ data = [
 layout = {
   polar: {
     radialaxis: {
-      visible: true,
-      range: [0, 50]
+      visible: false,
+      range: [0, 10]
     }
   }
 }
