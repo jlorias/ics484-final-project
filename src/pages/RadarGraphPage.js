@@ -989,7 +989,6 @@ data = [
 ]
 
 layout = {
-  title": {"text": "The Happiness of 141 Countries"}
   polar: {
     radialaxis: {
       visible: true,
