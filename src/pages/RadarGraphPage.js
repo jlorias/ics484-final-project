@@ -996,17 +996,6 @@ layout = {
       visible: true,
       range: [0, 10]
     }
-    legend: {
-      traceorder: 'normal',
-      font: {
-        family: 'Arial',
-        size: 12,
-        color: '#000'
-      },
-      bgcolor: '#E2E2E2',
-      bordercolor: '#FFFFFF',
-      borderwidth: 2
-    }
   }
 }
 
