@@ -183,7 +183,7 @@ data = [
   },
   {
   type: 'scatterpolar',
-  r: [6.456625,	1.148625,	1.34575	0.82625	,0.523,	0.15725,0.065875],
+  r: [6.456625,	1.148625,	1.34575, 0.82625	,0.523,	0.15725,0.065875],
   theta: ['Happiness','GDP','Social Support', 'Life Expectancy', 'Freedom', 'Generosity','Perception of Corruption'],
   fill: 'toself',
   name: 'Panama'
