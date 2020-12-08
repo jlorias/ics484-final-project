@@ -999,4 +999,4 @@ layout = {
 }
 
 
-Plotly.newPlot("myDiv", data, layout)
+Plotly.newPlot("myDiv", data, layout,{scrollZoom: true})
