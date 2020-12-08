@@ -989,8 +989,8 @@ data = [
 ]
 
 layout = {
-  height: 2000,
-  width: 2500,
+  height: 1000,
+  width: 1000,
   polar: {
     radialaxis: {
       visible: true,
