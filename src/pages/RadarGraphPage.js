@@ -22,24 +22,10 @@ data = [
   },
   {
   type: 'scatterpolar',
-  r: [7.504625,	1.384125,	1.542	0.958375,	0.6010625,	0.39475,	0.131875],
+  r: [7.504625,	1.384125,	1.542,	0.958375,	0.6010625,	0.39475,	0.131875],
   theta: ['Happiness','GDP','Social Support', 'Life Expectancy', 'Freedom', 'Generosity','Perception of Corruption'],
   fill: 'toself',
   name: 'Iceland'
-  },
-  {
-  type: 'scatterpolar',
-  r: [7.499625,	1.464625,	1.458125,	0.974625,	0.60075,	0.272125,	0.366],
-  theta: ['Happiness','GDP','Social Support', 'Life Expectancy', 'Freedom', 'Generosity','Perception of Corruption'],
-  fill: 'toself',
-  name: 'Switzerland'
-  },
-  {
-  type: 'scatterpolar',
-  r: [7.435875,	1.405375,	1.41425,	0.92375,	0.5739375,	0.380125,	0.298375],
-  theta: ['Happiness','GDP','Social Support', 'Life Expectancy', 'Freedom', 'Generosity','Perception of Corruption'],
-  fill: 'toself',
-  name: 'Netherlands'
   },
   {
   type: 'scatterpolar',

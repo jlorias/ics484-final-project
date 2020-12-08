@@ -22,7 +22,7 @@ data = [
   },
   {
   type: 'scatterpolar',
-  r: [7.504625,	1.384125,	1.542	0.958375,	0.6010625,	0.39475,	0.131875],
+  r: [7.504625,	1.384125,	1.542,	0.958375,	0.6010625,	0.39475,	0.131875],
   theta: ['Happiness','GDP','Social Support', 'Life Expectancy', 'Freedom', 'Generosity','Perception of Corruption'],
   fill: 'toself',
   name: 'Iceland'
