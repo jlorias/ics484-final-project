@@ -1,5 +1,5 @@
 // loop through csv data
-var data = [
+data = [
   {
   type: 'scatterpolar',
   r: [7.6245, 1.350625,	1.491625,	0.915875,	0.606625,	0.1935,	0.3965],
@@ -989,14 +989,14 @@ var data = [
   }
 ]
 
-var layout = {
+layout = {
   polar: {
     radialaxis: {
       visible: false,
       range: [0, 10]
     }
   }
-} 
+}
 
 
 Plotly.newPlot("myDiv", data, layout)
