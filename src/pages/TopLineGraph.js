@@ -3,7 +3,7 @@ let finland_line = {
         y: [6, 5, 5, 1, 1],
         mode: 'scatter',
         name: 'Finland',
-        line: {color: '#900C3F'}
+        line: {color: '#FFBA08'}
     }
 
 let denmark_line = {
@@ -11,7 +11,7 @@ let denmark_line = {
     y: [3, 1, 2, 3, 2],
     mode: 'scatter',
     name: 'Denmark',
-    line: {color: '#C70039'}
+    line: {color: '#FAA307'}
 }
 
 let norway_line = {
@@ -19,7 +19,7 @@ let norway_line = {
     y: [4, 4, 1, 2, 3],
     mode: 'scatter',
     name: 'Norway',
-    line: {color: '#FF5733'}
+    line: {color: '#F48C06'}
 }
 
 let iceland_line = {
@@ -27,7 +27,7 @@ let iceland_line = {
     y: [2, 3, 3, 4, 4],
     mode: 'scatter',
     name: 'Iceland',
-    line: {color: '#FFC300'}
+    line: {color: '#E85D04'}
 }
 
 let switzerland_line = {
@@ -35,7 +35,7 @@ let switzerland_line = {
     y: [1, 2, 4, 5, 6],
     mode: 'scatter',
     name: 'Switzerland',
-    line: {color: '#DAF7A6'}
+    line: {color: '#DC2F02'}
 }
 
 let top5_line_layout = {
