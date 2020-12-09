@@ -45,15 +45,35 @@
 
 <div>
 <!--  Graphs go here-->
-
-  <div id='line_plot'>
-    <script src="https://jlorias.github.io/ics484-final-project/src/pages/LineGraph.js"></script>
+  <div style="width:100%; height:800px; float: left; margin-top: 50px">
+    <div id='line-plot-top' style="width:100%; height:500px; float: left;">
+      <script src="https://jlorias.github.io/ics484-final-project/src/pages/TopLineGraph.js"></script>
+    <h3>Top 5 Happiest Countries on Average Rankings from 2015 - 2019</h3>
+    <p>These five countries are on average ranked the happiest over the 2015 - 2019 period. Finland has been consistently improving its ranking over this five year period, while Switzerland has steadily declined in happiness ranking.</p>
+    </div>
   </div>
 
+  <div style="width:100%; height:800px; margin-top: 50px">
+    <div id='line-plot-bottom' style="width:100%; height:500px; float: left;">
+      <script src="https://jlorias.github.io/ics484-final-project/src/pages/BottomLineGraph.js"></script>
+      <h3>Bottom 5 Unhappiest Countries on Average Rankings from 2015 - 2019</h3>
+      <p>These five countries are on average ranked the unhappiest over the 2015 - 2019 period. Burundi has made great improvements over time, while Afghanistan hit a peak ranking in 2017 but are currently trending down again.</p>
+    </div>
+  </div>
+
+  <div style="width:100%; height:1000px; margin-top: 200px; float: left;">
+    <div id='corruption' style="width:100%; height:700px;">
+      <script src="https://jlorias.github.io/ics484-final-project/src/pages/TopBottomCorruptionLineGraph.js"></script>
+    </div>
+    <h3>Perception of Corruption</h3>
+    <p>According to the World Happiness Report, perceptions of corruption are calculated via the average of binary answers to the two Gallup World Poll questions:“Is corruption widespread throughout the
+      government or not?” and “Is corruption widespread within businesses or not?” In cases where data for government corruption are missing, the perception of business corruption is used as the overall corruption-perception measure. Visualized here are the trends in scores for the top 5 and bottom 5 average ranked countries' perceptions of corruption scores.
+      Of note, the areas that tended to rank higher in the average happiness score assume that there is more corruption prevalent in their country. Meanwhile on average for the lower ranked countries on the happiness report average,
+      their citizens tend to report that there is little corruption occurring. The two primary outliers of the top 5 and bottom 5 are Iceland and Rwanda respectively. Rwandan citizens on average seem to assume that there is actually
+    widespread corruption occurring in government and business, more so than the happier country's citizens believe occurs in their own countries. Citizens of Iceland seem to share a disbelief that there is barely any corruption in government and business, similar to those countries that rank towards the bottom of the happiness report.</p>
+  </div>
 
 </div>
-
-
 <!-- Bootstrap CDNs-->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
