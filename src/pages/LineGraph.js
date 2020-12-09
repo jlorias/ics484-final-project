@@ -1,4 +1,4 @@
-let finland = {
+let finland_line = {
         x: [2015,2016,2017,2018,2019],
         y: [6, 5, 5, 1, 1],
         mode: 'scatter',
@@ -6,7 +6,7 @@ let finland = {
         line: {color: '#900C3F'}
     }
 
-let denmark = {
+let denmark_line = {
     x: [2015,2016,2017,2018,2019],
     y: [3, 1, 2, 3, 2],
     mode: 'scatter',
@@ -14,7 +14,7 @@ let denmark = {
     line: {color: '#C70039'}
 }
 
-let norway = {
+let norway_line = {
     x: [2015,2016,2017,2018,2019],
     y: [4, 4, 1, 2, 3],
     mode: 'scatter',
@@ -22,7 +22,7 @@ let norway = {
     line: {color: '#FF5733'}
 }
 
-let iceland = {
+let iceland_line = {
     x: [2015,2016,2017,2018,2019],
     y: [2, 3, 3, 4, 4],
     mode: 'scatter',
@@ -30,7 +30,7 @@ let iceland = {
     line: {color: '#FFC300'}
 }
 
-let switzerland = {
+let switzerland_line = {
     x: [2015,2016,2017,2018,2019],
     y: [1, 2, 4, 5, 6],
     mode: 'scatter',
@@ -52,13 +52,13 @@ let top5_line_layout = {
     title:'Top 5 Countries Ranking Over Time'
     };
 
-data = [finland, denmark, iceland, norway, switzerland];
+data = [finland_line, denmark_line, iceland_line, norway_line, switzerland_line];
 
 Plotly.newPlot('line-plot-top', data, top5_line_layout);
 
 
 
-let rwanda = {
+let rwanda_line = {
     x: [2015,2016,2017,2018,2019],
     y: [154, 152, 151, 151, 152],
     mode: 'scatter',
@@ -66,7 +66,7 @@ let rwanda = {
     line: {color: '#900C3F'}
 }
 
-let afghanistan = {
+let afghanistan_line = {
     x: [2015,2016,2017,2018,2019],
     y: [153, 154, 141, 145, 154],
     mode: 'scatter',
@@ -74,7 +74,7 @@ let afghanistan = {
     line: {color: '#C70039'}
 }
 
-let tanzania = {
+let tanzania_line = {
     x: [2015,2016,2017,2018,2019],
     y: [146, 149, 153, 153, 153],
     mode: 'scatter',
@@ -82,7 +82,7 @@ let tanzania = {
     line: {color: '#FF5733'}
 }
 
-let syria = {
+let syria_line = {
     x: [2015,2016,2017,2018,2019],
     y: [156, 156, 152, 150, 149],
     mode: 'scatter',
@@ -90,7 +90,7 @@ let syria = {
     line: {color: '#FFC300'}
 }
 
-let burundi = {
+let burundi_line = {
     x: [2015,2016,2017,2018,2019],
     y: [157, 157, 154, 156, 145],
     mode: 'scatter',
@@ -112,6 +112,6 @@ let bot5_line_layout = {
     title:'Bottom 5 Countries Ranking Over Time'
 };
 
-data2 = [rwanda, afghanistan, tanzania, syria, burundi];
+data2 = [rwanda_line, afghanistan_line, tanzania_line, syria_line, burundi_line];
 
 Plotly.newPlot('line-plot-bottom', data2, bot5_line_layout)
