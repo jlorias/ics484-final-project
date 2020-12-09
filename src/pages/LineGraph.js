@@ -54,7 +54,7 @@ let top5_line_layout = {
 
 data = [finland, denmark, iceland, norway, switzerland];
 
-Plotly.newPlot('line_plot-top', data, top5_line_layout);
+Plotly.newPlot('line-plot-top', data, top5_line_layout);
 
 
 
@@ -111,4 +111,7 @@ let bot5_line_layout = {
         range: [6, 1],
     }
 };
-Plotly.newPlot('line_plot-bottom', data, bot5_line_layout)
+
+data = [finland, denmark, iceland, norway, switzerland];
+
+Plotly.newPlot('line-plot-bottom', data, bot5_line_layout)
