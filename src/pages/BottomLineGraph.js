@@ -3,7 +3,7 @@ let rwanda_line = {
     y: [154, 152, 151, 151, 152],
     mode: 'scatter',
     name: 'Rwanda',
-    line: {color: '#6064db'}
+    line: {color: '#036283'}
 }
 
 let afghanistan_line = {
@@ -11,7 +11,7 @@ let afghanistan_line = {
     y: [153, 154, 141, 145, 154],
     mode: 'scatter',
     name: 'Afghanistan',
-    line: {color: '#7477e0'}
+    line: {color: '#032283'}
 }
 
 let tanzania_line = {
@@ -19,7 +19,7 @@ let tanzania_line = {
     y: [146, 149, 153, 153, 153],
     mode: 'scatter',
     name: 'Tanzania',
-    line: {color: '#888be4'}
+    line: {color: '#240383'}
 }
 
 let syria_line = {
@@ -27,7 +27,7 @@ let syria_line = {
     y: [156, 156, 152, 150, 149],
     mode: 'scatter',
     name: 'Syria',
-    line: {color: '#9c9ee9'}
+    line: {color: '#640383'}
 }
 
 let burundi_line = {
@@ -35,7 +35,7 @@ let burundi_line = {
     y: [157, 157, 154, 156, 145],
     mode: 'scatter',
     name: 'Burundi',
-    line: {color: '#b0b2ed'}
+    line: {color: '#830362'}
 }
 
 let bot5_line_layout = {
@@ -48,7 +48,7 @@ let bot5_line_layout = {
     yaxis: {
         title: 'Ranking',
         dtick: 1,
-        range: [160, 135],
+        range: [160, 140],
     },
     title:'Bottom 5 Countries Ranking Over Time'
 };

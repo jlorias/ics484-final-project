@@ -47,7 +47,7 @@ let top5_line_layout = {
     },
     yaxis: {
         title: 'Ranking',
-        range: [10, 1],
+        range: [8, 1],
         dtick: 1
     },
     title:'Top 5 Countries Ranking Over Time'
