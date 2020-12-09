@@ -1,139 +1,73 @@
-
-    Plotly.d3.csv('https://raw.githubusercontent.com/idemello/Cholera484/master/choleraDeathLocations.csv', function (err, rows) {
-      Plotly.d3.csv("https://raw.githubusercontent.com/idemello/Cholera484/master/choleraPumpLocations.csv", function (err2, rows2) {
+/*
+ Plotly.d3.csv("src/data/Country_Codes_Revised.csv", function(err, rows) {
         function unpack(rows, key) {
           return rows.map(function (row) {
             return row[key];
           });
         }
 
-        var pumpLocLon = [];
-        var pumpLocLat = [];
+        let totalScore = [];
+        let country = [];
+        let countryCode = [];
+        let rank = [];
 
-        //console.log(rows2);
+        totalScore.push(unpack(rows, "AVG_TOTAL_SCORE"));
+        country.push(unpack(rows, "COUNTRY"));
+        countryCode.push(unpack(rows,  "COUNTRY_CODE"));
+        rank.push(unpack(rows, "RANK"));
 
-        pumpLocLon.push(Object.keys(rows2[0])[0]);
-        pumpLocLat.push(Object.keys(rows2[0])[1]);
+        // debugging outputs - delete later
+        console.log(totalScore);
+        console.log(country);
+        console.log(countryCode);
 
-
-        for (var i = 0; i < rows2.length; i++) {
-          pumpLocLat.push(rows2[i]["51.513341"]);
-          pumpLocLon.push(rows2[i]["-0.136668"]);
-        }
-
-
-        /*for (var i = 0; i <= rows2.length; i++) {
-            rows.push({Deaths: "10.9999", PumpLon: pumpLocLon[i], PumpLat: pumpLocLat[i]});
-        }
-        */
-        //console.log(pumpLocLon);
-        //console.log(pumpLocLat);
-
-        console.log(pumpLocLat);
-        console.log(pumpLocLon);
-
-        // var newArr = Object.values(rows);
-        //console.log(newArr[0]);
-
-        for (i = 0; i < rows2.length; i++) {
-          // newArr[0].push('0');
-        }
-
-        //console.log(rows[0]['Deaths']);
-
-
-        var scl = [[0, "#a50026"], [0.1, "#d73027"], [0.2, "#f46d43"], [0.3, "#fdae61"], [0.4, "#fee090"], [0.5, "#ffffff"], [0.6, "#e0f3f8"], [0.7, "#313695"], [0.8, "#313695"], [0.9, "#3C2200"], [1, "#000"]];
-        var data = [{
-          type: 'scattermapbox',
-          mode: 'markers',
-          text: unpack(rows, 'Deaths'),
-          lon: unpack(rows, 'PumpLon'),
-          lat: unpack(rows, 'PumpLat'),
+        let data = [{
+          type: 'choropleth',
+          locationmode: 'ISO-3',
+          locations: countryCode,
+          z: totalScore,
+          text: country,
+          colorscale: [
+            [0,'rgb(5, 10, 172)'],[0.35,'rgb(40, 60, 190)'],
+            [0.5,'rgb(70, 100, 245)'], [0.6,'rgb(90, 120, 245)'],
+            [0.7,'rgb(106, 137, 247)'],[1,'rgb(220, 220, 220)']],
+          autocolorscale: false,
+          reversescale: true,
           marker: {
-            color: 'rgb(255, 3, 3)',
-            autocolorscale: false,
-            cmin: 0,
-            cmax: 20,
-            reversescale: false,
-            opacity: 0.59,
-            size: unpack(rows, 'Deaths'),
-            sizeref: 0.3333333333,
-            colorbar: {
-              thickness: 10,
-              titleside: 'right',
-              outlinecolor: 'rgba(68,68,68,0)',
-              ticks: 'outside',
-              ticklen: 3,
-              shoticksuffix: 'last',
-              ticksuffix: ' deaths',
-              dtick: 1
+            line: {
+              color: "rgb(180, 180, 180)",
+              width: 0.5
             }
           },
-
-          name: 'Deaths'
+          tick0: 0,
+          zmin: 0,
+          dtick: 1000,
+          colorbar: {
+            autotic: true,
+            title: 'Average Happiness Score'
+          }
         }];
 
-        var pumpData = [{
-          type: 'scattermapbox',
-          mode: 'markers',
-          opacity: 0.5,
-          lon: pumpLocLon,
-          lat: pumpLocLat,
-          marker: {
-            symbol: 'square',
-            size: 15,
-            color: 'rgb(0,0,0)'
-          },
-          name: 'Pump'
-        }];
-
-        var layout = {
-
-          height: 1000,
+        let layout = {
           width: 2000,
-          dragmode: 'zoom',
-          title: 'Deaths by Location From Cholera, London, August 19th, 1854 to September 29th 1854',
-          mapbox: {
-            center: {
-              lat: 51.51289,
-              lon: -0.136523
-            },
-            domain: {
-              x: [0, 1],
-              y: [0, 1]
-            },
-            style: 'dark',
-            zoom: 16.1
+          height: 1000,
+          title: "Countries Ranked by Average Total Happiness from 2015-2019",
+          geo:{
+            projection:{
+              type: 'mercator',
+            }
           },
           margin: {
             r: 0,
-            t: 0,
-            b: 0,
             l: 0,
-            pad: 0
-          },
-          showlegend: true,
-          legend: {
-            x: 0,
-            y: 1,
-            traceorder: 'normal',
-            font: {
-              family: 'sans-serif',
-              size: 12,
-              color: '#000'
-            },
-            sizeref: 0.3333,
-            bgcolor: '#E2E2E2',
-            bordercolor: '#FFFFFF',
-            borderwidth: 2
+            t: 15,
+            b: 0
           }
         };
 
-        Plotly.setPlotConfig({
-          mapboxAccessToken: 'pk.eyJ1IjoiaWRlbWVsbG8iLCJhIjoiY2ptNnFiZmc5MDJoZzNwdXE2aXhiYXNqdCJ9.qKCVHMu9enwE6uzCJRDgFw'
-        });
-
-        Plotly.newPlot('myDiv', data, layout);
-        Plotly.plot('myDiv', pumpData, layout);
-      })
-    });
+        Plotly.newPlot("myDiv", data, layout, {responsive: true});
+      });
+ */
+// // public access token - copy to use
+//     // pk.eyJ1IjoiamxvcmlhcyIsImEiOiJja2llZnY5eWoxc3NmMnludm45MHoxc3Z5In0.TwbCO39rRPJq4ctLODRH0w
+//  github for country codes: https://gist.github.com/tadast/8827699#file-countries_codes_and_coordinates-csv
