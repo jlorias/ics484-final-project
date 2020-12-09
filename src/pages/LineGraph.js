@@ -48,6 +48,7 @@ let top5_line_layout = {
         },
         yaxis: {
             title: 'Ranking',
+            range: [6, 1],
             type: 'linear'
         }
     };
