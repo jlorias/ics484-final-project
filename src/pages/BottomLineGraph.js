@@ -48,7 +48,7 @@ let bot5_line_layout = {
     yaxis: {
         title: 'Ranking',
         dtick: 1,
-        range: [158, 140],
+        range: [160, 135],
     },
     title:'Bottom 5 Countries Ranking Over Time'
 };
