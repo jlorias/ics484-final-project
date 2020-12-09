@@ -112,6 +112,6 @@ let bot5_line_layout = {
     title:'Bottom 5 Countries Ranking Over Time'
 };
 
-data = [rwanda, afghanistan, tanzania, syria, burundi];
+data2 = [rwanda, afghanistan, tanzania, syria, burundi];
 
-Plotly.newPlot('line-plot-bottom', data, bot5_line_layout)
+Plotly.newPlot('line-plot-bottom', data2, bot5_line_layout)
