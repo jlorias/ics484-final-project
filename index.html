@@ -42,10 +42,12 @@
       </div>
     </nav>
   </div>
+  <div class="container-fluid" style="width: 100%; height: 50px; background-color: red;">
 
+  </div>
   <!--  map goes here -->
   <div id='map' style='width: 100%; height: 100%;'>
-    
+
   </div>
   <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoiamxvcmlhcyIsImEiOiJja2llZnY5eWoxc3NmMnludm45MHoxc3Z5In0.TwbCO39rRPJq4ctLODRH0w';
@@ -53,9 +55,11 @@
       container: 'map',
       style: 'mapbox://styles/jlorias/ckiglk37v5p4g19mavjv8lykq', // stylesheet location
       center: [-41.914450, 39.279703], // starting position [lng, lat]
-      zoom: 2 // starting zoom
+      zoom: 5 // starting zoom
     });
   </script>
+
+
 
   <!-- Bootstrap CDNs-->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

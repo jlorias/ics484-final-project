@@ -1,0 +1,245 @@
+RANK,COUNTRY,COUNTRY_CODE,LATITUDE,LONGITUDE,AVG_TOTAL_SCORE
+1,Finland," ""FIN"""," ""64"""," ""26""",7.6245
+2,Denmark," ""DNK"""," ""56"""," ""10""",7.56625
+3,Norway," ""NOR"""," ""62"""," ""10""",7.545875
+4,Iceland," ""ISL"""," ""65"""," ""-18""",7.504625
+5,Switzerland," ""CHE"""," ""47"""," ""8""",7.499625
+6,Netherlands," ""NLD"""," ""52.5"""," ""5.75""",7.435875
+7,Sweden," ""SWE"""," ""62"""," ""15""",7.328125
+8,Canada," ""CAN"""," ""60"""," ""-95""",7.323375
+9,New Zealand," ""NZL"""," ""-41"""," ""174""",7.31075
+10,Australia," ""AUS"""," ""-27"""," ""133""",7.258125
+11,Austria," ""AUT"""," ""47.3333"""," ""13.3333""",7.181
+12,Costa Rica," ""CRI"""," ""10"""," ""-84""",7.1415
+13,Israel," ""ISR"""," ""31.5"""," ""34.75""",7.141
+14,Luxembourg," ""LUX"""," ""49.75"""," ""6.1667""",6.99375
+15,Ireland," ""IRL"""," ""53"""," ""-8""",6.985625
+16,United Kingdom," ""GBR"""," ""54"""," ""-2""",6.964
+17,United States," ""USA"""," ""38"""," ""-97""",6.95875
+18,Germany," ""DEU"""," ""51"""," ""9""",6.95
+19,Belgium," ""BEL"""," ""50.8333"""," ""4""",6.922
+20,United Arab Emirates," ""ARE"""," ""24"""," ""54""",6.7745
+21,Czech Republic," ""CZE"""," ""49.75"""," ""15.5""",6.728625
+22,Mexico," ""MEX"""," ""23"""," ""-102""",6.676375
+23,Malta," ""MLT"""," ""35.8333"""," ""14.5833""",6.606
+24,France," ""FRA"""," ""46"""," ""2""",6.544
+25,Chile," ""CHL"""," ""-30"""," ""-71""",6.534875
+26,Brazil," ""BRA"""," ""-10"""," ""-55""",6.523625
+27,Panama," ""PAN"""," ""9"""," ""-80""",6.456625
+28,Singapore," ""SGP"""," ""1.3667"""," ""103.8""",6.4375
+29,Qatar," ""QAT"""," ""25.5"""," ""51.25""",6.403875
+30,Uruguay," ""URY"""," ""-33"""," ""-56""",6.379375
+31,Guatemala," ""GTM"""," ""15.5"""," ""-90.25""",6.378375
+32,Saudi Arabia," ""SAU"""," ""25"""," ""45""",6.375625
+33,Spain," ""ESP"""," ""40"""," ""-4""",6.352375
+34,Argentina," ""ARG"""," ""-34"""," ""-64""",6.319375
+35,Colombia," ""COL"""," ""4"""," ""-72""",6.259375
+36,Thailand," ""THA"""," ""15"""," ""100""",6.182125
+37,El Salvador," ""SLV"""," ""13.8333"""," ""-88.9167""",6.1725
+38,Bahrain," ""BHR"""," ""26"""," ""50.55""",6.14575
+39,Slovakia," ""SVK"""," ""48.6667"""," ""19.5""",6.142
+40,Kuwait," ""KWT"""," ""29.3375"""," ""47.6581""",6.10075
+41,Italy," ""ITA"""," ""42.8333"""," ""12.8333""",6.097625
+42,Uzbekistan," ""UZB"""," ""41"""," ""64""",6.094125
+43,Nicaragua," ""NIC"""," ""13"""," ""-85""",6.0565
+44,Poland," ""POL"""," ""52"""," ""20""",6.05625
+45,Lithuania," ""LTU"""," ""56"""," ""24""",6.012
+46,Ecuador," ""ECU"""," ""-2"""," ""-77.5""",6.0055
+47,Slovenia," ""SVN"""," ""46"""," ""15""",5.97425
+48,Japan," ""JPN"""," ""36"""," ""138""",5.910875
+49,South Korea," ""KOR"""," ""37"""," ""127.5""",5.889
+50,Cyprus," ""CYP"""," ""35"""," ""33""",5.85025
+51,Romania," ""ROU"""," ""46"""," ""25""",5.83775
+52,Kazakhstan," ""KAZ"""," ""48"""," ""68""",5.827375
+53,Bolivia," ""BOL"""," ""-17"""," ""-65""",5.800375
+54,Kosovo,"""KOS""",,,5.791375
+55,Latvia," ""LVA"""," ""57"""," ""25""",5.775125
+56,Mauritius," ""MUS"""," ""-20.2833"""," ""57.55""",5.774625
+57,Jamaica," ""JAM"""," ""18.25"""," ""-77.5""",5.7475
+58,Russia," ""RUS"""," ""60"""," ""100""",5.742125
+59,Estonia," ""EST"""," ""59"""," ""26""",5.7335
+60,Peru," ""PER"""," ""-10"""," ""-76""",5.716625
+61,Paraguay," ""PRY"""," ""-23"""," ""-58""",5.69525
+62,Malaysia," ""MYS"""," ""2.5"""," ""112.5""",5.692125
+63,"Moldova, Republic of"," ""MDA"""," ""47"""," ""29""",5.6725
+64,Libya," ""LBY"""," ""25"""," ""17""",5.57
+65,Algeria," ""DZA"""," ""28"""," ""3""",5.496375
+66,Belarus," ""BLR"""," ""53"""," ""28""",5.494875
+67,Hungary," ""HUN"""," ""47"""," ""20""",5.490125
+68,Philippines," ""PHL"""," ""13"""," ""122""",5.47875
+69,Honduras," ""HND"""," ""15"""," ""-86.5""",5.473
+70,Pakistan," ""PAK"""," ""30"""," ""70""",5.459875
+71,Turkmenistan," ""TKM"""," ""40"""," ""60""",5.4565
+72,Portugal," ""PRT"""," ""39.5"""," ""-8""",5.45025
+73,Croatia," ""HRV"""," ""45.1667"""," ""15.5""",5.448625
+74,Serbia," ""SRB"""," ""44"""," ""21""",5.438125
+75,Turkey," ""TUR"""," ""39"""," ""35""",5.3995
+76,Montenegro," ""MNE"""," ""42"""," ""19""",5.378625
+77,Dominican Republic," ""DOM"""," ""19"""," ""-70.6667""",5.284
+78,Bosnia and Herzegovina," ""BIH"""," ""44"""," ""18""",5.245875
+79,Tajikistan," ""TJK"""," ""39"""," ""71""",5.23625
+80,Indonesia," ""IDN"""," ""-5"""," ""120""",5.2295
+81,Venezuela," ""VEN"""," ""8"""," ""-66""",5.22225
+82,Azerbaijan," ""AZE"""," ""40.5"""," ""47.5""",5.22125
+83,China," ""CHN"""," ""35"""," ""105""",5.2085
+84,Kyrgyzstan," ""KGZ"""," ""41"""," ""75""",5.20625
+85,Greece," ""GRC"""," ""39"""," ""22""",5.202875
+86,Morocco," ""MAR"""," ""32"""," ""-5""",5.185625
+87,Nigeria," ""NGA"""," ""10"""," ""8""",5.179
+88,Lebanon," ""LBN"""," ""33.8333"""," ""35.8333""",5.167375
+89,Vietnam," ""VNM"""," ""16"""," ""106""",5.16225
+90,Mongolia," ""MNG"""," ""46"""," ""105""",5.125125
+91,Bhutan," ""BTN"""," ""27.5"""," ""90.5""",5.10875
+92,Jordan," ""JOR"""," ""31"""," ""36""",5.077
+93,Nepal," ""NPL"""," ""28"""," ""84""",4.850125
+94,Cameroon," ""CMR"""," ""6"""," ""12""",4.826375
+95,Bulgaria," ""BGR"""," ""43"""," ""25""",4.76575
+96,"Palestinian Territory, Occupied"," ""PSE"""," ""32"""," ""35.25""",4.721375
+97,Albania," ""ALB"""," ""41"""," ""20""",4.715
+98,Ghana," ""GHA"""," ""8"""," ""-2""",4.70875
+99,South Africa," ""ZAF"""," ""-29"""," ""24""",4.69275
+100,"Iran, Islamic Republic of"," ""IRN"""," ""32"""," ""53""",4.63625
+101,Tunisia," ""TUN"""," ""34"""," ""9""",4.628125
+102,Gabon," ""GAB"""," ""-1"""," ""11.75""",4.5545
+103,Congo," ""COG"""," ""-1"""," ""15""",4.540375
+104,Bangladesh," ""BGD"""," ""24"""," ""90""",4.533625
+105,Ivory Coast," ""CIV"""," ""8"""," ""-5""",4.52475
+106,Senegal," ""SEN"""," ""14"""," ""-14""",4.501625
+107,Iraq," ""IRQ"""," ""33"""," ""44""",4.494125
+108,Sierra Leone," ""SLE"""," ""8.5"""," ""-11.5""",4.48975
+109,Kenya," ""KEN"""," ""1"""," ""38""",4.47175
+110,Armenia," ""ARM"""," ""40"""," ""45""",4.455375
+111,Georgia," ""GEO"""," ""42"""," ""43.5""",4.406375
+112,Mauritania," ""MRT"""," ""20"""," ""-12""",4.405625
+113,Zambia," ""ZMB"""," ""-15"""," ""30""",4.405375
+114,Cambodia," ""KHM"""," ""13"""," ""105""",4.390875
+115,Sri Lanka," ""LKA"""," ""7"""," ""81""",4.382625
+116,Myanmar," ""MMR"""," ""22"""," ""98""",4.374375
+117,"Congo, the Democratic Republic of the"," ""COD"""," ""0"""," ""25""",4.37325
+118,Ethiopia," ""ETH"""," ""8"""," ""38""",4.37175
+119,Ukraine," ""UKR"""," ""49"""," ""32""",4.3165
+120,Niger," ""NER"""," ""16"""," ""8""",4.300875
+121,Egypt," ""EGY"""," ""27"""," ""30""",4.29675
+122,Mali," ""MLI"""," ""17"""," ""-4""",4.283125
+123,Benin," ""BEN"""," ""9.5"""," ""2.25""",4.26925
+124,Burkina Faso," ""BFA"""," ""13"""," ""-2""",4.26625
+125,India," ""IND"""," ""20"""," ""77""",4.19175
+126,Chad," ""TCD"""," ""15"""," ""19""",4.133375
+127,Guinea," ""GIN"""," ""11"""," ""-10""",4.10875
+128,Uganda," ""UGA"""," ""1"""," ""32""",4.0835
+129,Liberia," ""LBR"""," ""6.5"""," ""-9.5""",3.890125
+130,Zimbabwe," ""ZWE"""," ""-20"""," ""30""",3.87775
+131,Madagascar," ""MDG"""," ""-20"""," ""47""",3.81575
+132,Haiti," ""HTI"""," ""19"""," ""-72.4167""",3.764875
+133,Togo," ""TGO"""," ""8"""," ""1.1667""",3.747
+134,Malawi," ""MWI"""," ""-13.5"""," ""34""",3.705625
+135,Botswana," ""BWA"""," ""-22"""," ""24""",3.70175
+136,Yemen," ""YEM"""," ""15"""," ""48""",3.533625
+137,Rwanda," ""RWA"""," ""-2"""," ""30""",3.399375
+138,Afghanistan," ""AFG"""," ""33"""," ""65""",3.396625
+139,"Tanzania, United Republic of"," ""TZA"""," ""-6"""," ""35""",3.377875
+140,Syrian Arab Republic," ""SYR"""," ""35"""," ""38""",3.355875
+141,Burundi," ""BDI"""," ""-3.5"""," ""30""",3.34
+NULL,American Samoa," ""ASM"""," ""-14.3333"""," ""-170""",NULL
+NULL,Andorra," ""AND"""," ""42.5"""," ""1.6""",NULL
+NULL,Angola," ""AGO"""," ""-12.5"""," ""18.5""",NULL
+NULL,Anguilla," ""AIA"""," ""18.25"""," ""-63.1667""",NULL
+NULL,Antarctica," ""ATA"""," ""-90"""," ""0""",NULL
+NULL,Antigua and Barbuda," ""ATG"""," ""17.05"""," ""-61.8""",NULL
+NULL,Aruba," ""ABW"""," ""12.5"""," ""-69.9667""",NULL
+NULL,Bahamas," ""BHS"""," ""24.25"""," ""-76""",NULL
+NULL,Barbados," ""BRB"""," ""13.1667"""," ""-59.5333""",NULL
+NULL,Belize," ""BLZ"""," ""17.25"""," ""-88.75""",NULL
+NULL,Bermuda," ""BMU"""," ""32.3333"""," ""-64.75""",NULL
+NULL,Bouvet Island," ""BVT"""," ""-54.4333"""," ""3.4""",NULL
+NULL,British Indian Ocean Territory," ""IOT"""," ""-6"""," ""71.5""",NULL
+NULL,Brunei," ""BRN"""," ""4.5"""," ""114.6667""",NULL
+NULL,Cape Verde," ""CPV"""," ""16"""," ""-24""",NULL
+NULL,Cayman Islands," ""CYM"""," ""19.5"""," ""-80.5""",NULL
+NULL,Central African Republic," ""CAF"""," ""7"""," ""21""",NULL
+NULL,Christmas Island," ""CXR"""," ""-10.5"""," ""105.6667""",NULL
+NULL,Cocos (Keeling) Islands," ""CCK"""," ""-12.5"""," ""96.8333""",NULL
+NULL,Comoros," ""COM"""," ""-12.1667"""," ""44.25""",NULL
+NULL,Cook Islands," ""COK"""," ""-21.2333"""," ""-159.7667""",NULL
+NULL,Cuba," ""CUB"""," ""21.5"""," ""-80""",NULL
+NULL,Djibouti," ""DJI"""," ""11.5"""," ""43""",NULL
+NULL,Dominica," ""DMA"""," ""15.4167"""," ""-61.3333""",NULL
+NULL,Equatorial Guinea," ""GNQ"""," ""2"""," ""10""",NULL
+NULL,Eritrea," ""ERI"""," ""15"""," ""39""",NULL
+NULL,Falkland Islands (Malvinas)," ""FLK"""," ""-51.75"""," ""-59""",NULL
+NULL,Faroe Islands," ""FRO"""," ""62"""," ""-7""",NULL
+NULL,Fiji," ""FJI"""," ""-18"""," ""175""",NULL
+NULL,French Guiana," ""GUF"""," ""4"""," ""-53""",NULL
+NULL,French Polynesia," ""PYF"""," ""-15"""," ""-140""",NULL
+NULL,French Southern Territories," ""ATF"""," ""-43"""," ""67""",NULL
+NULL,Gambia," ""GMB"""," ""13.4667"""," ""-16.5667""",NULL
+NULL,Gibraltar," ""GIB"""," ""36.1833"""," ""-5.3667""",NULL
+NULL,Greenland," ""GRL"""," ""72"""," ""-40""",NULL
+NULL,Grenada," ""GRD"""," ""12.1167"""," ""-61.6667""",NULL
+NULL,Guadeloupe," ""GLP"""," ""16.25"""," ""-61.5833""",NULL
+NULL,Guam," ""GUM"""," ""13.4667"""," ""144.7833""",NULL
+NULL,Guernsey," ""GGY"""," ""49.5"""," ""-2.56""",NULL
+NULL,Guinea-Bissau," ""GNB"""," ""12"""," ""-15""",NULL
+NULL,Guyana," ""GUY"""," ""5"""," ""-59""",NULL
+NULL,Heard Island and McDonald Islands," ""HMD"""," ""-53.1"""," ""72.5167""",NULL
+NULL,Holy See (Vatican City State)," ""VAT"""," ""41.9"""," ""12.45""",NULL
+NULL,Hong Kong," ""HKG"""," ""22.25"""," ""114.1667""",NULL
+NULL,Isle of Man," ""IMN"""," ""54.23"""," ""-4.55""",NULL
+NULL,Jersey," ""JEY"""," ""49.21"""," ""-2.13""",NULL
+NULL,Kiribati," ""KIR"""," ""1.4167"""," ""173""",NULL
+NULL,"Korea, Democratic People's Republic of"," ""PRK"""," ""40"""," ""127""",NULL
+NULL,Lao People's Democratic Republic," ""LAO"""," ""18"""," ""105""",NULL
+NULL,Lesotho," ""LSO"""," ""-29.5"""," ""28.5""",NULL
+NULL,Liechtenstein," ""LIE"""," ""47.1667"""," ""9.5333""",NULL
+NULL,Macao," ""MAC"""," ""22.1667"""," ""113.55""",NULL
+NULL,"Macedonia, the former Yugoslav Republic of"," ""MKD"""," ""41.8333"""," ""22""",NULL
+NULL,Maldives," ""MDV"""," ""3.25"""," ""73""",NULL
+NULL,Marshall Islands," ""MHL"""," ""9"""," ""168""",NULL
+NULL,Martinique," ""MTQ"""," ""14.6667"""," ""-61""",NULL
+NULL,Mayotte," ""MYT"""," ""-12.8333"""," ""45.1667""",NULL
+NULL,"Micronesia, Federated States of"," ""FSM"""," ""6.9167"""," ""158.25""",NULL
+NULL,Monaco," ""MCO"""," ""43.7333"""," ""7.4""",NULL
+NULL,Montserrat," ""MSR"""," ""16.75"""," ""-62.2""",NULL
+NULL,Mozambique," ""MOZ"""," ""-18.25"""," ""35""",NULL
+NULL,Namibia," ""NAM"""," ""-22"""," ""17""",NULL
+NULL,Nauru," ""NRU"""," ""-0.5333"""," ""166.9167""",NULL
+NULL,Netherlands Antilles," ""ANT"""," ""12.25"""," ""-68.75""",NULL
+NULL,New Caledonia," ""NCL"""," ""-21.5"""," ""165.5""",NULL
+NULL,Niue," ""NIU"""," ""-19.0333"""," ""-169.8667""",NULL
+NULL,Norfolk Island," ""NFK"""," ""-29.0333"""," ""167.95""",NULL
+NULL,Northern Mariana Islands," ""MNP"""," ""15.2"""," ""145.75""",NULL
+NULL,Oman," ""OMN"""," ""21"""," ""57""",NULL
+NULL,Palau," ""PLW"""," ""7.5"""," ""134.5""",NULL
+NULL,Papua New Guinea," ""PNG"""," ""-6"""," ""147""",NULL
+NULL,Pitcairn," ""PCN"""," ""-24.7"""," ""-127.4""",NULL
+NULL,Puerto Rico," ""PRI"""," ""18.25"""," ""-66.5""",NULL
+NULL,"Saint Helena, Ascension and Tristan da Cunha"," ""SHN"""," ""-15.9333"""," ""-5.7""",NULL
+NULL,Saint Kitts and Nevis," ""KNA"""," ""17.3333"""," ""-62.75""",NULL
+NULL,Saint Lucia," ""LCA"""," ""13.8833"""," ""-61.1333""",NULL
+NULL,Saint Pierre and Miquelon," ""SPM"""," ""46.8333"""," ""-56.3333""",NULL
+NULL,Saint Vincent & the Grenadines," ""VCT"""," ""13.25"""," ""-61.2""",NULL
+NULL,Samoa," ""WSM"""," ""-13.5833"""," ""-172.3333""",NULL
+NULL,San Marino," ""SMR"""," ""43.7667"""," ""12.4167""",NULL
+NULL,Sao Tome and Principe," ""STP"""," ""1"""," ""7""",NULL
+NULL,Seychelles," ""SYC"""," ""-4.5833"""," ""55.6667""",NULL
+NULL,Solomon Islands," ""SLB"""," ""-8"""," ""159""",NULL
+NULL,Somalia," ""SOM"""," ""10"""," ""49""",NULL
+NULL,South Georgia and the South Sandwich Islands," ""SGS"""," ""-54.5"""," ""-37""",NULL
+NULL,South Sudan," ""SSD"""," ""8"""," ""30""",NULL
+NULL,Sudan," ""SDN"""," ""15"""," ""30""",NULL
+NULL,Suriname," ""SUR"""," ""4"""," ""-56""",NULL
+NULL,Svalbard and Jan Mayen," ""SJM"""," ""78"""," ""20""",NULL
+NULL,Swaziland," ""SWZ"""," ""-26.5"""," ""31.5""",NULL
+NULL,Taiwan," ""TWN"""," ""23.5"""," ""121""",NULL
+NULL,Timor-Leste," ""TLS"""," ""-8.55"""," ""125.5167""",NULL
+NULL,Tokelau," ""TKL"""," ""-9"""," ""-172""",NULL
+NULL,Tonga," ""TON"""," ""-20"""," ""-175""",NULL
+NULL,Trinidad and Tobago," ""TTO"""," ""11"""," ""-61""",NULL
+NULL,Turks and Caicos Islands," ""TCA"""," ""21.75"""," ""-71.5833""",NULL
+NULL,Tuvalu," ""TUV"""," ""-8"""," ""178""",NULL
+NULL,United States Minor Outlying Islands," ""UMI"""," ""19.2833"""," ""166.6""",NULL
+NULL,Vanuatu," ""VUT"""," ""-16"""," ""167""",NULL
+NULL,"Virgin Islands, British"," ""VGB"""," ""18.5"""," ""-64.5""",NULL
+NULL,"Virgin Islands, U.S."," ""VIR"""," ""18.3333"""," ""-64.8333""",NULL
+NULL,Wallis and Futuna," ""WLF"""," ""-13.3"""," ""-176.2""",NULL
+NULL,Western Sahara," ""ESH"""," ""24.5"""," ""-13""",NULL
