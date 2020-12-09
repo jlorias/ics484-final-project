@@ -51,54 +51,7 @@
 
 </div>
 
-<script>
-Plotly.d3.csv("./top5.csv", function(err, rows) {
-
-    function unpack(rows, key) {
-        return rows.map(function(row) { return row[key]; });
-        }
-
-        var top5HeaderNames= Plotly.d3.keys(rows[0]);
-
-      var top5HeaderValues = [];
-      var top5CellValues = [];
-      for (i = 0; i < 9; i++) {
-          top5HeaderValue = [top5HeaderNames[i]];
-          top5HeaderValues[i] = top5HeaderValue;
-          top5CellValue = unpack(rows, top5HeaderNames[i]);
-          top5CellValues[i] = top5CellValue;
-    }
-
-    var finland = {
-        x: cellValues[0],
-        y: cellValues[1],
-        mode: 'lines+markers',
-        name: 'Finland',
-        line: {color: '#5272f0'}
-
-    }
-
-    var top5_line_layout = {
-        title:'Top 5 Countries Ranking Over Time',
-        xaxis: {
-        title: 'Years (2015-2019)',
-        range:  ['2015', '2019'],
-        type: 'date'
-        },
-        yaxis: {
-            title: 'Ranking',
-            type: 'linear'
-        }
-    };
-
-
-
-    data = [finland, denmark, norway, iceland, switzerland];
-
-    Plotly.newPlot('line_plot', data, top5_line_layout);
-
-    });
-</script>
+<script src="src/components/LineGraph.js"></script>
 <!-- Bootstrap CDNs-->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
