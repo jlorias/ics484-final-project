@@ -12,12 +12,9 @@
   <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
   <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
 
-  <style>
-    html, body {
-      width: 100%;
-      height: 100%
-    }
-  </style>
+  <!-- CSS -->
+  <link href='src/css/map.css' rel='stylesheet' />
+
 </head>
 <body>
   <!--  menu -->
@@ -38,24 +35,116 @@
           <li class="nav-item">
             <a class="nav-link" href="src/pages/RadarGraphPage.html">Happiness By Country</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/jlorias/ics484-final-project/blob/main/README.md">About</a>
+          </li>
         </ul>
       </div>
     </nav>
   </div>
 
   <!--  map goes here -->
-  <div id='map' style='width: 100%; height: 100%;'>
-    
+  <div id='map'></div>
+  <button type="button" id="info-button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#infoModal">
+    Map Info
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" style="width: 550px">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">About this Map</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          This map is based off of the <a href="https://www.kaggle.com/unsdsn/world-happiness">World Happiness Reports from 2015-2019.</a>
+          From the 5 CSV files used, we decided to average out the data to simplify the map portion. The top 10 countries in averaged descending ranked order
+          (out of 10) are:
+            <ol>
+              <li><strong>Finland</strong> - Total Happiness Score: 7.62</li>
+              <li><strong>Denmark</strong> - Total Happiness Score: 7.57</li>
+              <li><strong>Norway</strong> - Total Happiness Score: 7.54</li>
+              <li><strong>Iceland</strong> - Total Happiness Score: 7.50</li>
+              <li><strong>Switzerland</strong> - Total Happiness Score: 7.49</li>
+              <li><strong>Netherlands</strong> - Total Happiness Score: 7.43</li>
+              <li><strong>Sweden</strong> - Total Happiness Score: 7.33</li>
+              <li><strong>Canada</strong> - Total Happiness Score: 7.32</li>
+              <li><strong>New Zealand</strong> - Total Happiness Score: 7.31</li>
+              <li><strong>Australia</strong> - Total Happiness Score: 7.26</li>
+            </ol>
+          The majority of these countries are Scandinavian/Nordic. From the official
+          <a href="https://worldhappiness.report/ed/2020/the-nordic-exceptionalism-what-explains-why-the-nordic-countries-are-constantly-among-the-happiest-in-the-world/">
+            World Happiness Report website,
+          </a> the level of happiness in these countries have a strong relation to the hgih quality of institutions, government support in
+          finances and health, low corruption, and "well-functioning democaracy and state institutions." Additionally, there is a high degree of
+          freedom, autonomy, and social trust between neighbors.
+          <br>
+          On the flipside, the bottom 10 countries in averaged ranked ascending order are:
+            <ol>
+              <li><strong>Burundi</strong> - Total Happiness Score: 3.34</li>
+              <li><strong>Syrian Arab Republic</strong> - Total Happiness Score: 3.35</li>
+              <li><strong>Tanzania</strong> - Total Happiness Score: 3.37</li>
+              <li><strong>Afghanistan</strong> - Total Happiness Score: 3.39</li>
+              <li><strong>Rwanda</strong> - Total Happiness Score: 3.40</li>
+              <li><strong>Yemen</strong> - Total Happiness Score: 3.53</li>
+              <li><strong>Botswana</strong> - Total Happiness Score: 3.70</li>
+              <li><strong>Malawi</strong> - Total Happiness Score: 3.70</li>
+              <li><strong>Togo</strong> - Total Happiness Score: 3.74</li>
+              <li><strong>Haiti</strong> - Total Happiness Score: 3.76</li>
+            </ol>
+          From the official
+          <a href="https://worldhappiness.report/ed/2020/cities-and-happiness-a-global-ranking-and-analysis/">
+            World Happiness Report website,
+          </a> the significant decrease in happiness in these countries correlate to the historical political instability in these regions,
+          outbreak of war and armed conflict, long-lasting effects from natural disasters, and possibly terrorism.
+          <br>
+          The CSV file used can be viewed
+          <a href="https://github.com/jlorias/ics484-final-project/blob/main/src/data/Country_Codes_Revised.csv">here.</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <div id="info">Averaged Total Scores of Country Happiness (HDI) from 2015-2019</div>
+
+  <div class='map-overlay' id='legend'></div>
   <script>
     mapboxgl.accessToken = 'pk.eyJ1IjoiamxvcmlhcyIsImEiOiJja2llZnY5eWoxc3NmMnludm45MHoxc3Z5In0.TwbCO39rRPJq4ctLODRH0w';
-    var map = new mapboxgl.Map({
+    let map = new mapboxgl.Map({
+      title: "Averaged Total Happiness Scores from 2015-2019",
       container: 'map',
       style: 'mapbox://styles/jlorias/ckiglk37v5p4g19mavjv8lykq', // stylesheet location
       center: [-41.914450, 39.279703], // starting position [lng, lat]
       zoom: 2 // starting zoom
     });
+
+    map.on('load', function() {
+      let layers = ['> 7.50 (Finland)', '7.0-7.5', '6.5-6.9', '6.0-6.4', '5.5-5.9', '5.0-5.4', '4.5-4.9', '4.0-4.4', '3.9-3.4', '< 3.4 (Burundi)', 'Not Ranked'];
+      let colors = ['#fee9b3', '#f48d06', '#e75b04', '#de2e02', '#d10000', '#9c0207', '#6c040e', '#370617', '#03071c', '#000000', '#bfbfbf'];
+
+      for (let i = 0; i < layers.length; i++) {
+        let layer = layers[i];
+        let color = colors[i];
+        let item = document.createElement('div');
+        let key = document.createElement('span');
+        key.className = 'legend-key';
+        key.style.backgroundColor = color;
+
+        let value = document.createElement('span');
+        value.innerHTML = layer;
+        item.appendChild(key);
+        item.appendChild(value);
+        legend.appendChild(item);
+      }
+    });
   </script>
+
 
   <!-- Bootstrap CDNs-->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
