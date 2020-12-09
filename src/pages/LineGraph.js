@@ -39,7 +39,6 @@ let switzerland = {
 }
 
 let top5_line_layout = {
-    title:'Top 5 Countries Ranking Over Time',
     showlegend: true,
     xaxis: {
         title: 'Years (2015-2019)',
@@ -49,7 +48,8 @@ let top5_line_layout = {
     yaxis: {
         title: 'Ranking',
         range: [6, 1],
-    }
+    },
+    title:'Top 5 Countries Ranking Over Time'
     };
 
 data = [finland, denmark, iceland, norway, switzerland];
@@ -58,48 +58,47 @@ Plotly.newPlot('line-plot-top', data, top5_line_layout);
 
 
 
-let finland = {
+let rwanda = {
     x: [2015,2016,2017,2018,2019],
-    y: [6, 5, 5, 1, 1],
+    y: [154, 152, 151, 151, 152],
     mode: 'scatter',
-    name: 'Finland',
+    name: 'Rwanda',
     line: {color: '#900C3F'}
 }
 
-let denmark = {
+let afghanistan = {
     x: [2015,2016,2017,2018,2019],
-    y: [3, 1, 2, 3, 2],
+    y: [153, 154, 141, 145, 154],
     mode: 'scatter',
-    name: 'Denmark',
+    name: 'Afghanistan',
     line: {color: '#C70039'}
 }
 
-let norway = {
+let tanzania = {
     x: [2015,2016,2017,2018,2019],
-    y: [4, 4, 1, 2, 3],
+    y: [146, 149, 153, 153, 153],
     mode: 'scatter',
-    name: 'Norway',
+    name: 'Tanzania',
     line: {color: '#FF5733'}
 }
 
-let iceland = {
+let syria = {
     x: [2015,2016,2017,2018,2019],
-    y: [2, 3, 3, 4, 4],
+    y: [156, 156, 152, 150, 149],
     mode: 'scatter',
-    name: 'Iceland',
+    name: 'Syria',
     line: {color: '#FFC300'}
 }
 
-let switzerland = {
+let burundi = {
     x: [2015,2016,2017,2018,2019],
-    y: [1, 2, 4, 5, 6],
+    y: [157, 157, 154, 156, 145],
     mode: 'scatter',
-    name: 'Switzerland',
+    name: 'Burundi',
     line: {color: '#DAF7A6'}
 }
 
 let bot5_line_layout = {
-    title:'Bottom 5 Countries Ranking Over Time',
     showlegend: true,
     xaxis: {
         title: 'Years (2015-2019)',
@@ -108,10 +107,11 @@ let bot5_line_layout = {
     },
     yaxis: {
         title: 'Ranking',
-        range: [6, 1],
-    }
+        range: [157, 141],
+    },
+    title:'Bottom 5 Countries Ranking Over Time'
 };
 
-data = [finland, denmark, iceland, norway, switzerland];
+data = [rwanda, afghanistan, tanzania, syria, burundi];
 
 Plotly.newPlot('line-plot-bottom', data, bot5_line_layout)
