@@ -3,7 +3,7 @@ let finland = {
         y: [6, 5, 5, 1, 1],
         mode: 'scatter',
         name: 'Finland',
-        line: {color: '##900C3F'}
+        line: {color: '#900C3F'}
     }
 
 let denmark = {
@@ -19,7 +19,7 @@ let norway = {
     y: [4, 4, 1, 2, 3],
     mode: 'scatter',
     name: 'Norway',
-    line: {color: '##FF5733'}
+    line: {color: '#FF5733'}
 }
 
 let iceland = {
@@ -38,22 +38,19 @@ let switzerland = {
     line: {color: '#DAF7A6'}
 }
 
-
-
 let top5_line_layout = {
-        title:'Top 5 Countries Ranking Over Time',
-        showlegend: true,
-        xaxis: {
-        title: 'Years (2015-2019)',
-        range:  ['2015', '2019'],
-            dtick: 1
+    title:'Top 5 Countries Ranking Over Time',
+    showlegend: true,
+    xaxis: {
+    title: 'Years (2015-2019)',
+    range:  ['2015', '2019'],
+    dtick: 1
         },
         yaxis: {
             title: 'Ranking',
             type: 'linear'
         }
     };
-
 
 data = [finland, denmark, iceland, norway, switzerland];
 
