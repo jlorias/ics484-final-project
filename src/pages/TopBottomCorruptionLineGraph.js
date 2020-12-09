@@ -87,11 +87,12 @@ let top_bot_corrupt_line_layout = {
     },
     yaxis: {
         title: 'Ranking',
-        range: [0, 1]
+        range: [0, 0.70],
+        dtick: 0.02
     },
-    title:'Top 5 Countries Ranking Over Time'
+    title:'Top 5 and Bottom 5 Countries Perception of Corruption from 2015 - 2019'
 };
 
-top_bot_data = [finland_corruption_line, denmark_corruption_line, iceland_corruption_line, norway_corruption_line, switzerland_corruption_line];
+top_bot_data = [finland_corruption_line, denmark_corruption_line, iceland_corruption_line, norway_corruption_line, switzerland_corruption_line, rwanda_corruption_line, afghanistan_corruption_line, tanzania_corruption_line, syria_corruption_line, burundi_corruption_line];
 
 Plotly.newPlot('corruption', top_bot_data , top_bot_corrupt_line_layout);
