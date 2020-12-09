@@ -114,4 +114,4 @@ let bot5_line_layout = {
 
 data2 = [rwanda_line, afghanistan_line, tanzania_line, syria_line, burundi_line];
 
-Plotly.newPlot('line-plot-bottom', data2, bot5_line_layout)
+Plotly.newPlot('line-plot-bottom', data2, bot5_line_layout);
