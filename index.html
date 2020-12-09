@@ -57,7 +57,49 @@
           </button>
         </div>
         <div class="modal-body">
-          This map is based off of the World Happiness Reports from 2015-2019.
+          This map is based off of the <a href="https://www.kaggle.com/unsdsn/world-happiness">World Happiness Reports from 2015-2019.</a>
+          From the 5 CSV files used, we decided to average out the data to simplify the map portion. The top 10 countries in averaged descending ranked order
+          (out of 10) are:
+            <ol>
+              <li><strong>Finland</strong> - Total Happiness Score: 7.62</li>
+              <li><strong>Denmark</strong> - Total Happiness Score: 7.57</li>
+              <li><strong>Norway</strong> - Total Happiness Score: 7.54</li>
+              <li><strong>Iceland</strong> - Total Happiness Score: 7.50</li>
+              <li><strong>Switzerland</strong> - Total Happiness Score: 7.49</li>
+              <li><strong>Netherlands</strong> - Total Happiness Score: 7.43</li>
+              <li><strong>Sweden</strong> - Total Happiness Score: 7.33</li>
+              <li><strong>Canada</strong> - Total Happiness Score: 7.32</li>
+              <li><strong>New Zealand</strong> - Total Happiness Score: 7.31</li>
+              <li><strong>Australia</strong> - Total Happiness Score: 7.26</li>
+            </ol>
+          The majority of these countries are Scandinavian/Nordic. From the official
+          <a href="https://worldhappiness.report/ed/2020/the-nordic-exceptionalism-what-explains-why-the-nordic-countries-are-constantly-among-the-happiest-in-the-world/">
+            World Happiness Report website,
+          </a> the level of happiness in these countries have a strong relation to the hgih quality of institutions, government support in
+          finances and health, low corruption, and "well-functioning democaracy and state institutions." Additionally, there is a high degree of
+          freedom, autonomy, and social trust between neighbors.
+          <br>
+          On the flipside, the bottom 10 countries in averaged ranked ascending order are:
+            <ol>
+              <li><strong>Burundi</strong> - Total Happiness Score: 3.34</li>
+              <li><strong>Syrian Arab Republic</strong> - Total Happiness Score: 3.35</li>
+              <li><strong>Tanzania</strong> - Total Happiness Score: 3.37</li>
+              <li><strong>Afghanistan</strong> - Total Happiness Score: 3.39</li>
+              <li><strong>Rwanda</strong> - Total Happiness Score: 3.40</li>
+              <li><strong>Yemen</strong> - Total Happiness Score: 3.53</li>
+              <li><strong>Botswana</strong> - Total Happiness Score: 3.70</li>
+              <li><strong>Malawi</strong> - Total Happiness Score: 3.70</li>
+              <li><strong>Togo</strong> - Total Happiness Score: 3.74</li>
+              <li><strong>Haiti</strong> - Total Happiness Score: 3.76</li>
+            </ol>
+          From the official
+          <a href="https://worldhappiness.report/ed/2020/cities-and-happiness-a-global-ranking-and-analysis/">
+            World Happiness Report website,
+          </a> the significant decrease in happiness in these countries correlate to the historical political instability in these regions,
+          outbreak of war and armed conflict, long-lasting effects from natural disasters, and possibly terrorism.
+          <br>
+          The CSV file used can be viewed
+          <a href="https://github.com/jlorias/ics484-final-project/blob/main/src/data/Country_Codes_Revised.csv">here.</a>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -65,6 +107,7 @@
       </div>
     </div>
   </div>
+
   <div id="info">Averaged Total Scores of Country Happiness (HDI) from 2015-2019</div>
 
   <div class='map-overlay' id='legend'></div>
