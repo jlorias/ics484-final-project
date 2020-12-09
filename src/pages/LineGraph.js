@@ -111,4 +111,7 @@ let bot5_line_layout = {
         range: [6, 1],
     }
 };
+
+data = [finland, denmark, iceland, norway, switzerland];
+
 Plotly.newPlot('line_plot-bottom', data, bot5_line_layout)
